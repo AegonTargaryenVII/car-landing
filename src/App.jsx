@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Background } from './Components/Background/Background';
 import { Navbar } from './Components/Navbar/Navbar';
+import {Hero} from './Components/Hero/Hero'
 
 export const App = () => {
   let heroData = [
@@ -8,12 +9,21 @@ export const App = () => {
     { text1: "", text2: "" },
     { text1: "", text2: "" },
   ]
-  const [heroCount, setHeroCount] = useState(0);
+  const [heroCount, setHeroCount] = useState(2);
   const [playStatus, setPlaystatus] = useState(false);
   return (
     <div>
       <Background playStatus={playStatus} heroCount={heroCount} />
-      <Navbar></Navbar>
+      <Navbar setHeroCount={setHeroCount} setPlaystatus={setPlaystatus} ></Navbar>
+      <Hero
+      setPlaystatus ={setPlaystatus}
+      setHeroCount = {setHeroCount}
+      heroCount = {heroCount}
+      playStatus={playStatus}
+      heroData={heroData[heroCount]}
+      
+      />
+      
     </div>
 
   )

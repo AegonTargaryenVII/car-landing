@@ -4,7 +4,7 @@ export const Navbar = () => {
     return (
         <div className='nav'>
 
-            <div className='nav-logo'>E-Vee</div>
+            <div className='nav-logo '>E-Vee</div>
             <ul className='nav-menu'>
                 <li className='button'>Home</li>
                 <li className='button'>Explore</li>

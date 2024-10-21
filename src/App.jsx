@@ -8,7 +8,7 @@ export const App = () => {
     { text1: "", text2: "" },
     { text1: "", text2: "" },
   ]
-  const [heroCount, setHeroCount] = useState(1);
+  const [heroCount, setHeroCount] = useState(0);
   const [playStatus, setPlaystatus] = useState(false);
   return (
     <div>

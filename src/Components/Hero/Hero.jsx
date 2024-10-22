@@ -22,7 +22,7 @@ export const Hero = ({ heroCount, heroData, setHeroCount, setPlaystatus, playSta
                 </ul>
             </div>
             <div className="hero-play">
-                <img   src={playStatus ? pause_icon : play_icon} alt="" />
+                <img  onClick={()=>{setPlaystatus(!playStatus)}} src={playStatus ? pause_icon : play_icon} alt="" />
             </div>
         </div>
     )

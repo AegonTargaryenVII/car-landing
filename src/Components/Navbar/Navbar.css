@@ -8,10 +8,10 @@
 
 .nav-logo {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-style: italic;
-    color: greenyellow;
+    font-style: bold;
+    color: rgb(0, 0, 0);
     font-size: 60px;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .nav-menu {

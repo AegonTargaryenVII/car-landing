@@ -21,6 +21,9 @@ export const Hero = ({ heroCount, heroData, setHeroCount, setPlaystatus, playSta
                     <li onClick={() => [setHeroCount(2), setPlaystatus(false)]} className={heroCount === 2 ? "hero-dot orange" : "hero-dot"}></li>
                 </ul>
             </div>
+            <div className="hero-play">
+                <img   src={playStatus ? pause_icon : play_icon} alt="" />
+            </div>
         </div>
     )
 }

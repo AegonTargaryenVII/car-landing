@@ -1,4 +1,9 @@
-.hero{
+.hero {
     margin: 0px 120px;
     margin-top: 270px;
+}
+
+.hero-text {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
 }

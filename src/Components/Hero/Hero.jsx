@@ -20,10 +20,12 @@ export const Hero = ({ heroCount, heroData, setHeroCount, setPlaystatus, playSta
                     <li onClick={() => [setHeroCount(1), setPlaystatus(false)]} className={heroCount === 1 ? "hero-dot orange" : "hero-dot"}></li>
                     <li onClick={() => [setHeroCount(2), setPlaystatus(false)]} className={heroCount === 2 ? "hero-dot orange" : "hero-dot"}></li>
                 </ul>
-            </div>
-            <div className="hero-play">
+                <div className="hero-play">
+                    <p>Click here to play the video</p>
                 <img  onClick={()=>{setPlaystatus(!playStatus)}} src={playStatus ? pause_icon : play_icon} alt="" />
             </div>
+            </div>
+           
         </div>
     )
 }

@@ -20,6 +20,7 @@
     list-style: none;
     font-size: 18px;
     gap: 90px;
+    cursor: pointer;
 }
 
 .button {
